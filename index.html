@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jamka Coffee</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <img src="images/logo jamka_coffee.png" alt="Jamka Coffee Logo" class="logo">
+  <h1 id="title-en">Jamka Coffee</h1>
+  <h1 id="title-kh" class="khmer hidden">ចាមកាកាហ្វេ</h1>
+  <nav>
+    <a href="#about" id="nav-about-en">About Us</a>
+    <a href="#about" id="nav-about-kh" class="khmer hidden">អំពីពួកយើង</a>
+    <a href="#menu" id="nav-menu-en">Menu</a>
+    <a href="#menu" id="nav-menu-kh" class="khmer hidden">ម៉ឺនុយ</a>
+    <a href="#order" id="nav-order-en">Order</a>
+    <a href="#order" id="nav-order-kh" class="khmer hidden">ការបញ្ជាទិញ</a>
+    <button id="lang-toggle">KH / EN</button>
+  </nav>
+</header>
+
+<main>
+<section id="about">
+  <h2 id="about-title-en">About Jamka Coffee</h2>
+  <h2 id="about-title-kh" class="khmer hidden">អំពីចាមកាកាហ្វេ</h2>
+  <p id="about-text-en">
+    Welcome to Jamka Coffee ☕ — a cozy space where aroma, flavor, and friendship meet.  
+    Our mission is to make every cup feel like a small escape from the rush of daily life.  
+    Sit down, relax, or take your favorite blend to go. Every sip is brewed with heart ❤️.
+  </p>
+  <p id="about-text-kh" class="khmer hidden">
+    សូមស្វាគមន៍មកកាន់ ចាមកាកាហ្វេ ☕ — កន្លែងស្នាក់លំហែដ៏កក់ក្ដៅ ដែលក្លិនកាហ្វេ និងភាពរីករាយជួបជុំគ្នា។  
+    បេសកកម្មរបស់យើងគឺធ្វើឲ្យកែវកាហ្វេនីមួយៗពោរពេញដោយអារម្មណ៍សុខសាន្ដ និងភាពស្និទ្ធស្នាល។  
+    អង្គុយសម្រាក ឬយកទៅផ្ទះ កាហ្វេគ្រប់កែវត្រូវបានដុតដោយចិត្តស្រឡាញ់ ❤️។
+  </p>
+</section>
+
+<section id="menu">
+  <h2 id="menu-title-en">Our Menu</h2>
+  <h2 id="menu-title-kh" class="khmer hidden">ម៉ឺនុយរបស់យើង</h2>
+  <p id="menu-desc-en">View the menu for order in shop and delivery.</p>
+  <p id="menu-desc-kh" class="khmer hidden">មើលម៉ឺនុយសម្រាប់បញ្ជាទិញនៅហាង ឬដឹកជញ្ជូន។</p>
+</section>
+
+<section id="order">
+  <h2 id="order-title-en">Order via Messenger</h2>
+  <h2 id="order-title-kh" class="khmer hidden">បញ្ជាទិញតាមរយៈ Messenger</h2>
+  <p id="order-text-en">Ready to enjoy your favorite coffee? Click below to order now!</p>
+  <p id="order-text-kh" class="khmer hidden">តើអ្នកត្រៀមរួចហើយដើម្បីរីករាយជាមួយកាហ្វេដែលអ្នកចូលចិត្តមែនទេ? ចុចខាងក្រោមដើម្បីបញ្ជាទិញឥឡូវនេះ!</p>
+  <a href="https://m.me/jamkacoffee" class="order-btn" target="_blank">Order via Messenger</a>
+</section>
+</main>
+
+<footer>
+  <p id="footer-en">© 2025 Jamka Coffee. All rights reserved.</p>
+  <p id="footer-kh" class="khmer hidden">© ២០២៥ ចាមកាកាហ្វេ។ រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+</footer>
+
+<script>
+const toggleBtn = document.getElementById('lang-toggle');
+toggleBtn.addEventListener('click', () => {
+  document.querySelectorAll('.khmer').forEach(el => el.classList.toggle('hidden'));
+  document.querySelectorAll('#title-en, #nav-about-en, #nav-menu-en, #nav-order-en, #about-title-en, #about-text-en, #menu-title-en, #menu-desc-en, #order-title-en, #order-text-en, #footer-en')
+    .forEach(el => el.classList.toggle('hidden'));
+});
+</script>
+</body>
+</html>
