@@ -1,0 +1,25 @@
+
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Order</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header><img src="assets/logo.png"><nav>
+<a href="index.html">Home</a><a href="about.html">About</a>
+<a href="menu.html">Menu</a><a href="order.html">Order</a>
+<button onclick="switchLang('en')">EN</button>
+<button onclick="switchLang('kh')">KH</button>
+</nav></header>
+
+<div class="container">
+<h2 data-en="Order Coffee" data-kh="បញ្ជាទិញកាហ្វេ"></h2>
+<form onsubmit="sendTelegram();return false;">
+<input id="name" placeholder="Name">
+<select id="drink"><option>Latte</option><option>Cappuccino</option><option>Milk Tea</option></select>
+<input id="qty" type="number" value="1">
+<textarea id="addr" placeholder="Address"></textarea>
+<button class="btn" type="submit">Send to Telegram</button>
+</form>
+</div>
+
+<footer>© 2026 Jamka Coffee</footer>
+<script src="script.js"></script>
+</body></html>

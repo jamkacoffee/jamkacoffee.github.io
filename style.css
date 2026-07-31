@@ -1,0 +1,16 @@
+
+body{margin:0;font-family:'Poppins',Arial,sans-serif;background:#fff8f0;color:#3b241f}
+header{background:#7a3e1d;color:#fff;padding:15px 30px;display:flex;justify-content:space-between;align-items:center}
+header img{height:60px}
+nav a{color:#fff;margin:0 10px;text-decoration:none;font-weight:500}
+nav button{margin-left:10px;padding:6px 12px;border:none;border-radius:20px;cursor:pointer}
+.hero{padding:60px;text-align:center;background:linear-gradient(#8b4513,#c97b4a);color:#fff}
+.hero h1{font-size:42px}
+.btn{display:inline-block;padding:14px 30px;background:#ffb703;color:#3b241f;border-radius:30px;font-weight:bold;text-decoration:none;margin:8px}
+.container{padding:50px;text-align:center}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
+.menu-grid img{width:100%;height:420px;object-fit:cover;border-radius:18px;box-shadow:0 6px 16px rgba(0,0,0,.2)}
+form{max-width:420px;margin:0 auto;text-align:left}
+input,select,textarea{width:100%;padding:10px;margin:8px 0;border-radius:10px;border:1px solid #ccc}
+footer{background:#7a3e1d;color:#fff;text-align:center;padding:25px}
+.map{width:100%;height:300px;border-radius:16px;border:0}
